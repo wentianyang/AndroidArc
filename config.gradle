@@ -1,0 +1,57 @@
+ext {
+
+    // android 配置信息
+    android = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "29.0.3",
+            minSdkVersion    : 21,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0",
+    ]
+
+    // module application id
+    appId = [
+            applicationId: "com.android.androidarc",
+    ]
+
+    def lifecycle_version = "2.2.0"
+    // 依赖库
+    dependencies = [
+            "kotlin_version"               : "org.jetbrains.kotlin:kotlin-stdlib:1.4.10",
+            "core-ktx"                     : 'androidx.core:core-ktx:1.3.2',
+            "appcompat"                    : 'androidx.appcompat:appcompat:1.2.0',
+            "material"                     : 'com.google.android.material:material:1.2.1',
+            "constraintlayout"             : 'androidx.constraintlayout:constraintlayout:2.0.2',
+            "preference"                   : 'androidx.preference:preference:1.1.1',
+            "gson"                         : 'com.google.code.gson:gson:2.8.6',
+            "rxjava"                       : 'io.reactivex.rxjava3:rxjava:3.0.7',
+            "rxandroid"                    : 'io.reactivex.rxjava3:rxandroid:3.0.0',
+            "kotlinx-coroutines-android"   : 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9',
+            "lifecycle-livedata-core-ktx"  : "androidx.lifecycle:lifecycle-livedata-core-ktx:$lifecycle_version",
+            "lifecycle-livedata-ktx"       : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version",
+            "lifecycle-reactivestreams-ktx": "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version",
+            "lifecycle-runtime-ktx"        : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version",
+            "lifecycle-viewmodel-ktx"      : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
+    ]
+
+    def retrofit_version = "2.9.0"
+    // 网络依赖库
+    network = [
+            "okhttp"             : "com.squareup.okhttp3:okhttp:4.9.0",
+            "retrofit"           : "com.squareup.retrofit2:retrofit:$retrofit_version",
+            "converter-gson"     : "com.squareup.retrofit2:converter-gson:$retrofit_version",
+            "adapter-rxjava3"    : "com.squareup.retrofit2:adapter-rxjava3:$retrofit_version",
+            "logging-interceptor": "com.squareup.okhttp3:logging-interceptor:4.9.0",
+    ]
+
+    image = [
+            "glide"        : "com.github.bumptech.glide:glide:4.11.0",
+            "glideCompiler": "com.github.bumptech.glide:compiler:4.11.0",
+    ]
+
+    // 仓库地址
+    repositories = [
+
+    ]
+}

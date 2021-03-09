@@ -1,0 +1,8 @@
+include ':dota'
+include ':image'
+include ':live'
+include ':network'
+include ':common'
+include ':base'
+include ':app'
+rootProject.name = "AndroidArc"

@@ -1,0 +1,8 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        app:icon="@drawable/messages"
+        app:key="network_environment"
+        app:summary="开发环境:https://openapi.ywart.com/2.0/api/" />
+</PreferenceScreen>
